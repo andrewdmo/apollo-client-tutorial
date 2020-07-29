@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba80b606-1d39-4c09-ba0f-0a25322ec0d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/start/server/src/datasources/launch.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/datasources/launch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/server/src/datasources/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/datasources/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/server/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/server/src/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/resolvers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/server/src/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/schema.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/final/server/package.json" />
+  </component>
+  <component name="ProjectId" id="1fK1TsAUzkNXHTyXUvPEwZDclhS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba80b606-1d39-4c09-ba0f-0a25322ec0d5" name="Default Changelist" comment="" />
+      <created>1595951980431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595951980431</updated>
+      <workItem from="1595951981594" duration="3449000" />
+      <workItem from="1596033002406" duration="1630000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1440" height="245" key="GridCell.Tab.0.bottom" timestamp="1595952462163">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595952462163" />
+    <state width="1440" height="245" key="GridCell.Tab.0.center" timestamp="1595952462162">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595952462162" />
+    <state width="1440" height="245" key="GridCell.Tab.0.left" timestamp="1595952462162">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595952462162" />
+    <state width="1440" height="245" key="GridCell.Tab.0.right" timestamp="1595952462163">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595952462163" />
+    <state x="464" y="301" key="cloudConfig.PluginsDialog" timestamp="1596032813122">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="464" y="301" key="cloudConfig.PluginsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596032813122" />
+  </component>
+</project>

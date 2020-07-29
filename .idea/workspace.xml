@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba80b606-1d39-4c09-ba0f-0a25322ec0d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/start/server/src/datasources/launch.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/datasources/launch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start/server/src/datasources/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/datasources/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/server/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/server/src/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/resolvers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start/server/src/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/start/server/src/schema.js" afterDir="false" />
@@ -47,7 +46,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -58,17 +57,24 @@
       <option name="presentableId" value="Default" />
       <updated>1595951980431</updated>
       <workItem from="1595951981594" duration="3449000" />
-      <workItem from="1596033002406" duration="1630000" />
+      <workItem from="1596033002406" duration="2088000" />
+      <workItem from="1596036277931" duration="130000" />
+      <workItem from="1596036418312" duration="6036000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="WindowStateProjectService">
+    <state x="449" y="266" key="#Notifications" timestamp="1596036287083">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="449" y="266" key="#Notifications/0.23.1440.824@0.23.1440.824" timestamp="1596036287083" />
+    <state x="433" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596036085192">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="433" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1596036085192" />
     <state width="1440" height="245" key="GridCell.Tab.0.bottom" timestamp="1595952462163">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -85,9 +91,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1440" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595952462163" />
-    <state x="464" y="301" key="cloudConfig.PluginsDialog" timestamp="1596032813122">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1596036797202">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="464" y="301" key="cloudConfig.PluginsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596032813122" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596036797202" />
+    <state x="221" y="104" key="SettingsEditor/0.23.1440.824@0.23.1440.824" timestamp="1596036407814" />
+    <state x="464" y="301" key="cloudConfig.PluginsDialog" timestamp="1596039824430">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="464" y="301" key="cloudConfig.PluginsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596039824430" />
   </component>
 </project>

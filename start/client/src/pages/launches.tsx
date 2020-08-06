@@ -7,7 +7,6 @@ import * as GetLaunchListTypes from './__generated__/GetLaunchList';
 
 export const LAUNCH_TILE_DATA = gql`
     fragment LaunchTile on Launch {
-        __typename
         id
         isBooked
         rocket {
@@ -21,16 +20,40 @@ export const LAUNCH_TILE_DATA = gql`
     }
 `;
 
+// query that fetches list of launches:
+const GET_LAUNCHES = gql`
+    query launchList($after: String) {
+        launches(after: $after) {
+            cursor
+            hasMore
+            launches {
+                id
+                isBooked
+                rocket {
+                    id
+                    name
+                }
+                launchTile
+                mission {
+                    name
+                    missionPatch
+                }
+            }
+        }
+    }
+    ${LAUNCH_TILE_DATA}
+`;
+
 interface LaunchesProps extends RouteComponentProps {
 }
 
-const Launches: React.FC<LaunchesProps> = () => {
+const Launches: React.FC<LaunchesProps> = () => {   // 'Functional Component'
     const {
         data,
         loading,
         error,
-        fetchMore
-    } = useQuery<GetLaunchListTypes.GetLaunchList,
+        fetchMore   //pagination
+    } = useQuery<GetLaunchListTypes.GetLaunchList,      // pass query to React hook
         GetLaunchListTypes.GetLaunchListVariables>(GET_LAUNCHES);
 
     if (loading) return <Loading/>;
@@ -49,7 +72,6 @@ const Launches: React.FC<LaunchesProps> = () => {
             data.launches.hasMore && (
                 <Button
                     onClick={() =>
-
                         fetchMore({
                             variables: {
                                 after: data.launches.cursor,
@@ -77,45 +99,8 @@ const Launches: React.FC<LaunchesProps> = () => {
             )
             }
         </Fragment>
-    );
+    );  // Launches
 }
 
-export const LAUNCH_TILE_DATA = gql`
-    fragment LaunchTile on Launch {
-        id
-        isBooked
-        rocket {
-            id
-            name
-        }
-        mission {
-            name
-            missionPatch
-        }
-    }
-`;
-
-const GET_LAUNCHES = gql`
-    query launchList($after: String) {
-        launches(after: $after) {
-            cursor
-            hasMore
-            launches {
-                id
-                isBooked
-                rocket {
-                    id
-                    name
-                }
-                launchTile
-                mission {
-                    name
-                    missionPatch
-                }
-            }
-        }
-    }
-    ${LAUNCH_TILE_DATA}
-`;
 
 export default Launches;

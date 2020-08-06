@@ -17,15 +17,22 @@ interface LaunchProps extends RouteComponentProps {
 export const GET_LAUNCH_DETAILS = gql`
     query LaunchDetails($launchId: ID!) {
         launch(id: $launchId) {
+            id
             site
+            isBooked
             rocket {
+                id
+                name
                 type
             }
-            ...LaunchTile
+            mission {
+                name
+                missionPatch
+            }
         }
     }
-    ${LAUNCH_TILE_DATA}
 `;
+
 
 const Launch: React.FC<LaunchProps> = ({launchId}) => {
     const {
@@ -51,25 +58,5 @@ const Launch: React.FC<LaunchProps> = ({launchId}) => {
         </Fragment>
     );
 }
-
-
-export const GET_LAUNCH_DETAILS = gql`
-    query LaunchDetails($launchId: ID!) {
-        launch(id: $launchId) {
-            id
-            site
-            isBooked
-            rocket {
-                id
-                name
-                type
-            }
-            mission {
-                name
-                missionPatch
-            }
-        }
-    }
-`;
 
 export default Launch;

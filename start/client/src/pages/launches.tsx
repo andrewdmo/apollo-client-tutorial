@@ -33,7 +33,7 @@ const GET_LAUNCHES = gql`
                     id
                     name
                 }
-                launchTile
+                LaunchTile
                 mission {
                     name
                     missionPatch

@@ -29,8 +29,10 @@ export const GET_LAUNCH_DETAILS = gql`
                 name
                 missionPatch
             }
+            LaunchTile
         }
     }
+    ${LAUNCH_TILE_DATA}
 `;
 
 

@@ -7,7 +7,8 @@ import gql from 'graphql-tag';
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-    uri: 'http://localhost:4000/'  //set in server (RUN!)
+    uri: 'http://localhost:4000/',  //match in server (RUN!)
+    headers: {authorization: localStorage.getItem('token'),},   // reads token from localStorage then attached every GQL request header
 });
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({

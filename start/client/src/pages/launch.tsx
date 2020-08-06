@@ -17,6 +17,7 @@ interface LaunchProps extends RouteComponentProps {
 export const GET_LAUNCH_DETAILS = gql`
     query LaunchDetails($launchId: ID!) {
         launch(id: $launchId) {
+            isInCart @client    # creates virtual field locally
             id
             site
             isBooked
@@ -62,3 +63,5 @@ const Launch: React.FC<LaunchProps> = ({launchId}) => {
 }
 
 export default Launch;
+
+

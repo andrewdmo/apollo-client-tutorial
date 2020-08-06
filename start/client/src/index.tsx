@@ -1,9 +1,11 @@
-import {ApolloClient, ApolloProvider, InMemoryCache, NormalizedCacheObject, HttpLink} from '@apollo/client';
+import {ApolloClient, ApolloProvider, InMemoryCache, NormalizedCacheObject, HttpLink, useQuery} from '@apollo/client';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Pages from './pages';
 import injectStyles from './styles';
 import gql from 'graphql-tag';
+import {resolvers, typeDefs} from './resolvers';
+import Login from "./pages/login";
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
@@ -13,9 +15,36 @@ const link = new HttpLink({
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
     cache,
-    link
+    link,
+    typeDefs,
+    resolvers,
 });
 
+// create query:
+const IS_LOGGED_IN = gql`
+    query IsUserLoggedIn {
+        isLoggedIn @client
+    }`;
+
+// renders login or homepage component, also cache reads are sync:
+function IsLoggedIn() {
+    const {data} = useQuery(IS_LOGGED_IN);
+    return data.isLoggedIn ? <Pages/> : <Login/>;
+}
+
+
+//  replaces writeData:
+client.writeQuery({
+    query: gql`
+        query SaveLoggedIn {
+            isLoggedIn
+        }
+    `,
+    data: {
+        isLoggedIn: !!localStorage.getItem('token'),  // 'direct write' to Ap cache
+        cartItems: []
+    }
+})
 
 injectStyles();
 ReactDOM.render(

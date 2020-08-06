@@ -18,7 +18,7 @@ export default function Login() {
         LOGIN_USER, {
             onCompleted({login}) {
                 localStorage.setItem('token', login as string);     // save login token to localStorage
-                client.writeQuery({
+                client.writeQuery({     //  replaces writeData:
                     query: gql`
                         query SaveLoggedIn {
                             isLoggedIn

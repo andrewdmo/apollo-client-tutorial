@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {RouteComponentProps} from '@reach/router';
-import {gql} from '@apollo/client'
+import {gql, useQuery} from '@apollo/client'
 
 import {LaunchTile, Header, Button, Loading} from '../components';
 import * as GetLaunchListTypes from './__generated__/GetLaunchList';

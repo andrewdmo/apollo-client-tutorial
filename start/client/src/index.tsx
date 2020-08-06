@@ -1,5 +1,4 @@
-import {ApolloClient, InMemoryCache, NormalizedCacheObject, HttpLink} from '@apollo/client';
-import {ApolloProvider} from '@apollo/react-hooks';
+import {ApolloClient, ApolloProvider, InMemoryCache, NormalizedCacheObject, HttpLink} from '@apollo/client';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Pages from './pages';
@@ -16,6 +15,17 @@ const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
     link
 });
 
+
+injectStyles();
+ReactDOM.render(
+    <ApolloProvider client={client}>
+        <Pages/>
+    </ApolloProvider>,
+    document.getElementById('root')
+);
+// instantiation of the client object (above)
+
+
 client
 .query({
     query: gql`
@@ -31,11 +41,3 @@ client
 })
 .then(result => console.log(result));
 
-injectStyles();
-ReactDOM.render(
-    <ApolloProvider client={client}>
-        <Pages/>
-    </ApolloProvider>,
-    document.getElementById('root')
-);
-// instantiation of the client object (above)
